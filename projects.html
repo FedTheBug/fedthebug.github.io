@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projects by Mohammad Fahad Muntasir — Software Engineer." />
+  <title>Projects | @fedthebug</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="header-logo">@fedthebug</a>
+      <nav class="nav">
+        <button class="toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-menu').classList.toggle('active')">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="about.html">About</a></li>
+          <li class="nav-item"><a href="projects.html" class="current">Projects</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="projects-main">
+
+    <h2 class="page-title"><i class="fas fa-code"></i> Projects</h2>
+
+    <h3 class="section-label">// Professional Work</h3>
+    <div class="project-cards-container">
+
+      <!-- Sancus — Loyalty Service Rearchitecture -->
+      <div class="card">
+        <div class="card-info-panel">
+          <div class="title-and-links">
+            <h3 class="project-title">Sancus — Loyalty Service</h3>
+            <div class="project-links">
+              <span style="font-size:0.75em; color: var(--teal); font-family: 'Fira Code', monospace;">@ Pathao</span>
+            </div>
+          </div>
+          <div class="project-skills">
+            <span>Go</span>
+            <span>Redis</span>
+            <span>PostgreSQL</span>
+            <span>MySQL</span>
+            <span>Google Pub/Sub</span>
+            <span>Kubernetes</span>
+          </div>
+          <div class="project-description">
+            <p>Led the full rearchitecture of Pathao's loyalty service, increasing active users from 4% to 21%. Introduced RDBMS and Google Pub/Sub, achieving ~50% performance improvement in availing benefits and redeeming deals for 5M+ users.</p>
+            <p>Re-architected data storage, significantly reducing load on the primary database and improving endpoint performance.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Driver Service Platform -->
+      <div class="card">
+        <div class="card-info-panel">
+          <div class="title-and-links">
+            <h3 class="project-title">Driver Service Platform</h3>
+            <div class="project-links">
+              <span style="font-size:0.75em; color: var(--teal); font-family: 'Fira Code', monospace;">@ Pathao</span>
+            </div>
+          </div>
+          <div class="project-skills">
+            <span>Go</span>
+            <span>Redis</span>
+            <span>RabbitMQ</span>
+            <span>PostgreSQL</span>
+            <span>MySQL</span>
+            <span>Docker</span>
+          </div>
+          <div class="project-description">
+            <p>Extended the driver-service platform to support CNG vehicles, owning the full feature design including time-slotted kit installation scheduling and a resource-sharing system allowing multiple CNG drivers to operate under a shared CNG unit.</p>
+            <p>Core backend system managing driver lifecycle data — capabilities, online/offline status, adherence, documents, and kit distribution.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Levy — Subscription System -->
+      <div class="card">
+        <div class="card-info-panel">
+          <div class="title-and-links">
+            <h3 class="project-title">Levy — Subscription System</h3>
+            <div class="project-links">
+              <span style="font-size:0.75em; color: var(--teal); font-family: 'Fira Code', monospace;">@ Pathao</span>
+            </div>
+          </div>
+          <div class="project-skills">
+            <span>Go</span>
+            <span>Redis</span>
+            <span>RabbitMQ</span>
+            <span>PostgreSQL</span>
+            <span>MySQL</span>
+            <span>Kubernetes</span>
+          </div>
+          <div class="project-description">
+            <p>Designed and developed the core-subscription system using clean architecture, responsible for BNPL (Buy Now Pay Later) and Driver-Subscription services. Implemented auto-renew mechanism for seamless subscription renewals.</p>
+            <p>Redesigned Driver-Subscription to enable 13% more bike riders to join the platform with attractive incentives.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Payment Processing Framework -->
+      <div class="card">
+        <div class="card-info-panel">
+          <div class="title-and-links">
+            <h3 class="project-title">Payment Processing Framework</h3>
+          </div>
+          <div class="project-skills">
+            <span>Go</span>
+            <span>Node.js</span>
+            <span>RabbitMQ</span>
+            <span>PostgreSQL</span>
+            <span>AWS</span>
+          </div>
+          <div class="project-description">
+            <p>Refactored payment processing framework using Chain of Responsibility and Strategy design patterns. Supports 5+ payment providers across 16 operation domains — buy, sell, transfer, refund, KYC, webhooks, and more.</p>
+            <p>Implemented async queue-based transaction processing with checkpoint state tracking, PCI-compliant data encryption, and configuration-driven multi-tenancy.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Multi-tenant Subscription Microservice -->
+      <div class="card">
+        <div class="card-info-panel">
+          <div class="title-and-links">
+            <h3 class="project-title">Subscription Management Microservice</h3>
+          </div>
+          <div class="project-skills">
+            <span>Go</span>
+            <span>Docker</span>
+            <span>PostgreSQL</span>
+            <span>CrowdPay</span>
+            <span>AWS EKS</span>
+          </div>
+          <div class="project-description">
+            <p>Designed and developed a multi-tenant subscription management microservice powering recurring billing for campaigns with flexible plans, automated renewals, and payment processing via CrowdPay integration.</p>
+            <p>Built CI/CD pipeline using GitHub Actions, Docker, and Kubernetes to deploy to Amazon EKS with zero downtime.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vaki Onboarding -->
+      <div class="card">
+        <div class="card-info-panel">
+          <div class="title-and-links">
+            <h3 class="project-title">Vaki — Crowdfunding Platform Integration</h3>
+          </div>
+          <div class="project-skills">
+            <span>Go</span>
+            <span>Node.js</span>
+            <span>Mercado Pago</span>
+            <span>KYC</span>
+            <span>Sentry</span>
+          </div>
+          <div class="project-description">
+            <p>Onboarded Vaki, a Colombian crowdfunding platform, onto the Creative Backing Protocol infrastructure. Managed full KYC processes and payment integrations including cash, card, and bank transfers via Mercado Pago.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <h3 class="section-label">// Personal &amp; Academic</h3>
+    <div class="project-cards-container">
+
+      <!-- pReview -->
+      <div class="card">
+        <div class="card-info-panel">
+          <div class="title-and-links">
+            <h3 class="project-title">pReview</h3>
+            <div class="project-links">
+              <a href="https://github.com/FedTheBug" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-skills">
+            <span>Django</span>
+            <span>Flask</span>
+            <span>React</span>
+            <span>PostgreSQL</span>
+            <span>RabbitMQ</span>
+            <span>Docker</span>
+          </div>
+          <div class="project-description">
+            <p>Microservices-based product review platform. Backend split into Admin and Main services, each running in isolated Docker containers with separate databases. Services communicate asynchronously via RabbitMQ events.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- EventBook -->
+      <div class="card">
+        <div class="card-info-panel">
+          <div class="title-and-links">
+            <h3 class="project-title">EventBook</h3>
+            <div class="project-links">
+              <a href="https://github.com/FedTheBug/EventBook" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-skills">
+            <span>Laravel</span>
+            <span>Java</span>
+            <span>MySQL</span>
+          </div>
+          <div class="project-description">
+            <p>Online platform to browse and book tickets for upcoming events. Ships with both a web interface and a native Android application built in Java.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shikhbe Shob.AI -->
+      <div class="card">
+        <div class="card-info-panel">
+          <div class="title-and-links">
+            <h3 class="project-title">Shikhbe Shob.AI</h3>
+            <div class="project-links">
+              <a href="https://drive.google.com/file/d/1qWYUbO_O0W2hGgF9HSVk6sMIhj-6EST3/view" target="_blank" rel="noopener" aria-label="View poster">
+                <i class="fas fa-file-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-skills">
+            <span>Python</span>
+            <span>NLP</span>
+            <span>ELMo</span>
+            <span>Relation Extraction</span>
+          </div>
+          <div class="project-description">
+            <p>Undergraduate thesis — an AI-powered educational tool that generates questions and answers from Bengali paragraphs. Trained contextual embeddings (ELMo) for the Bangla language and built a question-answering proof of concept. Supervised by Dr. Nabeel Mohammed.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unsupervised MT -->
+      <div class="card">
+        <div class="card-info-panel">
+          <div class="title-and-links">
+            <h3 class="project-title">Unsupervised Machine Translation</h3>
+          </div>
+          <div class="project-skills">
+            <span>Python</span>
+            <span>NLP</span>
+            <span>Deep Learning</span>
+          </div>
+          <div class="project-description">
+            <p>Extended a Facebook Research approach to unsupervised machine translation using only monolingual corpora — applied to the Bengali language. Research project supervised by Dr. Nabeel Mohammed at North South University.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Absenteeism Research -->
+      <div class="card">
+        <div class="card-info-panel">
+          <div class="title-and-links">
+            <h3 class="project-title">Absenteeism Prediction</h3>
+          </div>
+          <div class="project-skills">
+            <span>Python</span>
+            <span>Clustering</span>
+            <span>Data Analysis</span>
+          </div>
+          <div class="project-description">
+            <p>Research project applying various cluster analysis techniques to predict and identify root causes of employee absenteeism in the workplace. Supervised by Dr. Sifat Momen at North South University.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ManageMe -->
+      <div class="card">
+        <div class="card-info-panel">
+          <div class="title-and-links">
+            <h3 class="project-title">ManageMe</h3>
+            <div class="project-links">
+              <a href="https://github.com/FedTheBug/ManageMe" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-skills">
+            <span>Java</span>
+            <span>JavaFX</span>
+            <span>MySQL</span>
+            <span>JFoenix</span>
+          </div>
+          <div class="project-description">
+            <p>A to-do list desktop application for managing daily tasks. Built with Java using the JavaFX framework and Scene Builder. Features a clean UI with Material Design components via JFoenix.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer">
+        <div class="footer-column">
+          <span class="footer-logo">@fedthebug</span>
+          <div class="footer-socials">
+            <a href="https://github.com/fedthebug" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/fahad-muntasir" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:fahadmuntasir747@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+          <p class="copyright">Mohammad Fahad Muntasir &copy; 2025</p>
+        </div>
+        <div class="footer-column">
+          <nav class="footer-nav">
+            <a href="index.html" class="footer-link"><i class="fas fa-house"></i> Home</a>
+            <a href="about.html" class="footer-link"><i class="fas fa-user"></i> About</a>
+            <a href="projects.html" class="footer-link"><i class="fas fa-code"></i> Projects</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Nunito:wght@400;700&display=swap');
+
+/* ─── Reset ─────────────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ul { list-style: none; }
+a { text-decoration: none; color: inherit; }
+img { display: block; max-width: 100%; }
+
+/* ─── Variables ─────────────────────────────────────────────────────────────── */
+:root {
+  --bg:         #1D263B;
+  --white:      #FFFFFF;
+  --green:      #7EB77F;
+  --pink:       #F08CAE;
+  --teal:       #0FA3B1;
+  --slate:      #6B818C;
+  --card-bg:    #FFFFFF;
+  --card-text:  #1D263B;
+}
+
+/* ─── Base ───────────────────────────────────────────────────────────────────── */
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: var(--bg);
+  color: var(--white);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Fira Code', monospace;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.75em;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+h3 {
+  font-size: 1.4em;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+/* ─── Main wrapper ───────────────────────────────────────────────────────────── */
+.main-container {
+  margin: 0 auto;
+  max-width: 1600px;
+  padding: 0 25px;
+}
+
+/* ─── Sections ───────────────────────────────────────────────────────────────── */
+section {
+  display: flex;
+  flex-direction: column;
+  padding-top: 8vh;
+  text-align: left;
+}
+
+/* ─── Hyperlinks ─────────────────────────────────────────────────────────────── */
+.hyperlink {
+  color: var(--pink);
+  text-decoration: underline;
+  font-weight: 700;
+}
+.hyperlink:hover { color: var(--green); }
+
+/* ─── Social icons ───────────────────────────────────────────────────────────── */
+.social-link a i,
+.social-link i {
+  transition: color 0.2s ease;
+}
+.social-link:hover i,
+.social-link a:hover i {
+  color: var(--pink);
+}
+
+/* ─── Date style ─────────────────────────────────────────────────────────────── */
+.date { font-style: italic; }
+
+@media only screen and (min-width: 768px) {
+  h2 { font-size: 2.5em; }
+  h3 { font-size: 2em; }
+}
